@@ -1,0 +1,58 @@
+.leaderboard {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-image: url('/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.leaderboard h2 {
+  text-align: center;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.leaderboard li.gold {
+  background-color: gold;
+  color: black;
+}
+
+.leaderboard li.silver {
+  background-color: silver;
+  color: black;
+}
+
+.leaderboard li.bronze {
+  background-color: #cd7f32;
+  color: black;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
